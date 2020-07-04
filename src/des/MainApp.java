@@ -39,7 +39,7 @@ public class MainApp {
         return Res;
     }
 
-    private String decode(String inputdata, String key) {
+    private static String decode(String inputdata, String key) {
         String ci = inputdata.replace(" ", "");
         int x = ci.length();
         String Res = "";
@@ -76,8 +76,8 @@ public class MainApp {
     }
 
     public static void main(String argsl[]){
-        String message = "48656C6C6FAAAAAA";
-        String key = "ADBCE12C";
+        String message = "48656C6C6F20576F726C640D0A000000";
+        String key = "68656C6C6F677579";
 
 
         System.out.println("Message = "+message);
@@ -89,8 +89,9 @@ public class MainApp {
         System.out.println("Encoded Value = "+encodedValue);
         System.out.println();
 
+        //String decodedValue = decode(encodedValue, key);
 
-        //System.out.println("Decoded Value = ");
+        //System.out.println("Decoded Value = "+decodedValue);
         //System.out.println();
     }
 

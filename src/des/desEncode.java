@@ -5,7 +5,7 @@
  */
 package des;
 
-import javax.swing.*;
+
 import java.io.File;
 import java.util.Scanner;
 
@@ -30,7 +30,7 @@ public class desEncode {
 
     void encode() {
         if (plain.equals("") && hex_plain.equals("")) {
-            JOptionPane.showMessageDialog(null, "Please provide plain text");
+            System.out.println("No plain text hex values...");
         } else {
             produce_permutation_key();
             get_16_subkeys();

@@ -5,7 +5,6 @@
  */
 package des;
 
-import javax.swing.*;
 import java.io.File;
 import java.util.Scanner;
 
@@ -31,7 +30,7 @@ public class desDecode {
 
     void decode() {
         if (cipher.equals("") && hex_cipher.equals("")) {
-            JOptionPane.showMessageDialog(null, "please provid cipher text");
+            System.out.println("No Ciper Text...");
         } else {
             produce_permutation_key();
             get_16_subkeys();
