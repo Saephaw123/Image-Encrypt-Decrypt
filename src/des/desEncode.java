@@ -224,9 +224,7 @@ public class desEncode {
         desEncode.data = data;
     }
 
-    public static void setL(int[][] l) {
-        desEncode.l = l;
-    }
+    public static void setL(int[][] l) { desEncode.l = l; }
 
     public static void setR(int[][] r) {
         desEncode.r = r;
